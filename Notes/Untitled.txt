@@ -1,0 +1,20 @@
+https://github.com/richardsforu/Cognizant-Angular6
+
+npm config set proxy http://proxy.cognizant.com:6050
+
+npm config set https-proxy http://proxy.cognizant.com:6050
+
+npm config set registry https://registry.npmjs.org/
+
+npm set strict-ssl false
+
+HTML5 Notes
+-------------------------
+UI - user interface
+
+HTML -> Hypertext - markup - Language
+HTML tags -> Elements -> interpreted into DOM
+<h1>Hello</h1>
+
+
+
