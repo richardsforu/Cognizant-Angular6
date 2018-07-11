@@ -7,15 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  grerting='Good Morning';
-  imgPath='https://i.ytimg.com/vi/c6L0lFEPDwk/hqdefault.jpg';
-  
-  status=true;
-  pName='James';
-  myTest=true;
 
-  testFun(){
-    console.log('---- Clicked ...')
+  message:string;
+  fun(msg){
+    this.message=msg;
   }
 
+  
 }

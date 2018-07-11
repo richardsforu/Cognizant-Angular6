@@ -1,0 +1,19 @@
+<div class="container mt-3">
+  <div class="alert bg-info">
+     
+   <h2>Message:{{message}} </h2>
+    
+  </div>
+
+</div>
+
+<div class="container mt-4">
+  <div class="alert bg-info" align='center'>
+
+      <app-greeting childMsg='Good Morning' (outMsgt)="displayMsg($event)"></app-greeting>
+      <app-greeting childMsg='Good Afternoon' (outMsg)="displayMsg($event)"></app-greeting>
+      <app-greeting childMsg='Good Evening' (outMsg)="displayMsg($event)"></app-greeting>
+
+  </div>
+</div>
+

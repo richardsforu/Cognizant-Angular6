@@ -1,9 +1,14 @@
 <div class="container mt-3">
   <div class="alert bg-info">
       <h2>Angular Application</h2>
-      <button class="btn btn-danger" [hidden]=!status>Click Here</button>
+      <button (click)='testFun()'    class="btn btn-danger" [hidden]=!status > Click Here</button>
   
-    <img [src]=imgPath>
+
+<input type="text"  [(ngModel)]='pName'> <br/>
+<h2>Name: {{pName}} </h2> <br>
+<button [style.background-color]="myTest? 'red':'blue'">Hello</button>
+
+
     </div>
 
 </div>

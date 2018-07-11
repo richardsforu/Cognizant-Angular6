@@ -1,0 +1,17 @@
+<div class="container mt-4">
+
+  <div class="card">
+
+    <div class="card-title bg-info">
+        <h3 align='center'>Parent Component</h3>
+    </div>
+
+    <div class="card-body">
+        <h3 align='center'>Message: {{message}} </h3>
+    </div>
+
+  </div>
+
+</div>
+
+<app-greeting (out)="fun($event)">Loading</app-greeting>
