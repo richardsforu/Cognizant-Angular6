@@ -1,0 +1,31 @@
+<div class="container mt-4">
+
+  <div class="alert bg-info">
+
+    <li *ngFor="let city of cities">
+        {{city}}
+    </li>
+
+  </div>
+
+  
+  <table class="table table-striped">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+
+    <tr *ngFor="let emp of employees">
+      <td>{{emp.id}}</td>
+      <td>{{emp.name}}</td>
+      <td>{{emp.email}}</td>
+    </tr>
+
+
+  </table>
+
+
+  
+
+</div>
