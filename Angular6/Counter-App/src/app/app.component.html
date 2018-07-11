@@ -1,0 +1,23 @@
+<div class="container mt-4">
+
+  <div class="card" align='center'>
+
+    <div class="card-title bg-info">
+        <h2>Counter APP</h2>
+    </div>
+
+    <div class="card-body">
+        <app-counter btnLbl='+10' (out)="totalCount(10)"></app-counter>
+        <app-counter btnLbl='+20' (out)="totalCount(20)"></app-counter>
+        <app-counter btnLbl='-5' (out)="totalCount(-5)"></app-counter>
+        <app-counter btnLbl='-10'(out)="totalCount(-10)"></app-counter>
+
+    </div>
+    <hr/>
+    <div class="card-text" >
+        <h3>Total Count: <span class="badge badge-secondary">{{totalCounter}}</span>  </h3>
+    </div>
+
+  </div>
+
+</div>
