@@ -1,0 +1,47 @@
+<div class="container mt-4">
+<div class="col-md-8">
+
+
+<div class="card">
+  <div class="card-header">
+    Product Form
+  </div>
+
+  <div class="card-body">
+
+      <form name="ProductForm" (submit)="handleSubmit($event)" >
+
+          <div class="form-group">
+            <label>Id</label>
+            <input name='prodId'  #s1 type="text" class="form-control" [(ngModel)]='prod.id'>
+          </div>
+
+          <div class="form-group">
+              <label>Name</label>
+              <input name='prodName' type="text" class="form-control" [(ngModel)]='prod.name'>
+          </div>
+
+          <div class="form-group">
+                <label>Price</label>
+                <input name='price' type="text" class="form-control" [(ngModel)]='prod.price'>
+          </div>
+
+          <div class="form-group" align='center'>
+            <button class="btn btn-primary" [hidden]='!isEdit'>Save</button>
+            <button class="btn btn-primary" [hidden]='isEdit' >Update</button>
+
+          </div>
+
+        
+        
+        </form>
+        
+
+  </div>
+
+</div>
+
+</div>
+
+
+</div>
