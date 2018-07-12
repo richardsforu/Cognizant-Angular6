@@ -12,6 +12,8 @@ export class ProductService {
  prods=PRODS;
 
   loadAll():any{
-      return this.prods;
+    
+    console.log('--- service: '+this.prods);
+  return this.prods;
   }
 }

@@ -1,5 +1,5 @@
 <div class="col-md-6">
-<div class="card">
+  <div class="card">
 
 
   <div class="card-header">
@@ -8,22 +8,22 @@
 
   <div class="card-body">
 
-    <form name="productForm" >
+    <form name="productForm" [formGroup]='productForm' (submit)='handleSubmit($event)'>
         <div class="form-group">
             <label>Id</label>
-            <input type="text" class="form-control" >
+            <input type="text" class="form-control" formControlName='id' >
         </div>
 
         <div class="form-group">
             <label>Name</label>
-            <input type="text" class="form-control">
+            <input type="text" class="form-control" formControlName='name'>
         </div>
 
         <div class="form-group">
             <label>Price</label>
-            <input type="text" class="form-control" >
+            <input type="text" class="form-control" formControlName='price'>
         </div>
-        <div class="form-group" align='center'>
+        <div class="form-group" align='center' >
             
           <button class="btn btn-primary">Save</button>
         </div>
